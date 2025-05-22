@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Include Font Awesome for professional icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <title>AnalytiXperts - Research & Data Analysis Support</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --success: #27ae60;
+            --gray: #95a5a6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a2a3a 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+        }
+        
+        :root {
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --secondary: #3f37c9;
+    --accent: #560bad;
+    --accent-light: #7209b7;
+    --text-dark: #2b2d42;
+    --text-light: #8d99ae;
+    --background: #f8f9fa;
+    --card-bg: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--background);
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e7ed 100%);
+    padding: 80px 0;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary-light), var(--accent-light));
+    opacity: 0.05;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    top: -100px;
+    left: -100px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    bottom: -50px;
+    right: -50px;
+    animation: float 10s ease-in-out infinite reverse;
+}
+
+.shape-3 {
+    width: 200px;
+    height: 200px;
+    bottom: 20%;
+    left: 10%;
+    animation: float 12s ease-in-out infinite 1s;
+}
+
+.shape-4 {
+    width: 250px;
+    height: 250px;
+    top: 20%;
+    right: 10%;
+    animation: float 9s ease-in-out infinite 2s;
+}
+
+.particles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary), var(--accent));
+    opacity: 0.2;
+    animation: particle-float 15s ease-in-out infinite;
+}
+
+.particle-1 {
+    width: 10px;
+    height: 10px;
+    top: 20%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.particle-2 {
+    width: 15px;
+    height: 15px;
+    top: 60%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.particle-3 {
+    width: 8px;
+    height: 8px;
+    top: 80%;
+    left: 40%;
+    animation-delay: 2s;
+}
+
+.particle-4 {
+    width: 12px;
+    height: 12px;
+    top: 30%;
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.particle-5 {
+    width: 6px;
+    height: 6px;
+    top: 70%;
+    left: 10%;
+    animation-delay: 4s;
+}
+
+.particle-6 {
+    width: 14px;
+    height: 14px;
+    top: 10%;
+    left: 50%;
+    animation-delay: 5s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+@keyframes particle-float {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(20px, -20px);
+    }
+    50% {
+        transform: translate(0, -40px);
+    }
+    75% {
+        transform: translate(-20px, -20px);
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 75px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.badge {
+    display: inline-block;
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.2);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(67, 97, 238, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(67, 97, 238, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(67, 97, 238, 0);
+    }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    position: relative;
+}
+
+.highlight {
+    position: relative;
+    color: var(--primary);
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, var(--primary-light), var(--accent-light));
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    max-width: 90%;
+}
+
+.features {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 8px 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    background-color: white;
+}
+
+.feature-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--primary);
+}
+
+.feature span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.primary-btn {
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+    color: white;
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+}
+
+.primary-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--accent), var(--secondary));
+    z-index: -1;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.primary-btn:hover {
+    box-shadow: 0 8px 25px rgba(67, 97, 238, 0.4);
+    transform: translateY(-3px);
+}
+
+.primary-btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.primary-btn svg {
+    width: 18px;
+    height: 18px;
+    stroke: white;
+    transition: transform 0.3s ease;
+}
+
+.primary-btn:hover svg {
+    transform: translateX(3px);
+}
+
+.secondary-btn {
+    background: rgba(255, 255, 255, 0.8);
+    color: var(--text-dark);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.secondary-btn::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.secondary-btn:hover {
+    color: var(--primary);
+    background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+.secondary-btn:hover::before {
+    opacity: 1;
+}
+
+.hero-visual {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    position: relative;
+}
+
+.visual-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-element {
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
+    width: 80%;
+    height: 80%;
+}
+
+.visual-element.chart {
+    animation: fadeInOut 12s infinite 0s;
+}
+
+.visual-element.scatter {
+    animation: fadeInOut 12s infinite 4s;
+}
+
+.visual-element.document {
+    animation: fadeInOut 12s infinite 8s;
+}
+
+.visual-element.code {
+    animation: fadeInOut 12s infinite 12s;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.9);
+    }
+    8%, 25% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    33% {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+    }
+}
+
+.chart-bars rect {
+    fill: url(#gradient);
+    opacity: 0.8;
+    transform-origin: bottom;
+    animation: grow 1s ease-out forwards;
+}
+
+.chart-line path {
+    stroke: var(--primary);
+    stroke-width: 2;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: draw 2s ease-out forwards;
+}
+
+.chart-line circle {
+    fill: var(--accent);
+    transform-origin: center;
+    animation: pulse-dot 2s infinite;
+}
+
+@keyframes grow {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.scatter circle {
+    fill: var(--primary-light);
+    transform-origin: center;
+    animation: scale-in 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+.glow {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(67, 97, 238, 0.15), transparent 70%);
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator:hover {
+    opacity: 1;
+}
+
+.mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid var(--primary);
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.wheel {
+    width: 6px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 3px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(15px);
+    }
+}
+
+.chevrons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chevrons svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary);
+    margin-top: -14px;
+    opacity: 0;
+    animation: fade-in 2s infinite;
+}
+
+.chevrons svg:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-in {
+    0%, 100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+    .hero-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        margin: 0 auto 2rem auto;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        max-width: 100%;
+    }
+
+    .visual-container {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .feature {
+        padding: 6px 12px;
+    }
+
+    .feature span {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .visual-container {
+        height: 280px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* SVG definitions */
+.visual-element svg {
+    width: 100%;
+    height: 100%;
+}
+
+.chart-bars rect:nth-child(1) {
+    animation-delay: 0.1s;
+    fill: var(--primary-light);
+}
+
+.chart-bars rect:nth-child(2) {
+    animation-delay: 0.2s;
+    fill: var(--primary);
+}
+
+.chart-bars rect:nth-child(3) {
+    animation-delay: 0.3s;
+    fill: var(--secondary);
+}
+
+.chart-bars rect:nth-child(4) {
+    animation-delay: 0.4s;
+    fill: var(--accent-light);
+}
+
+.chart-bars rect:nth-child(5) {
+    animation-delay: 0.5s;
+    fill: var(--accent);
+}
+
+.scatter circle:nth-child(1) { --i: 1; }
+.scatter circle:nth-child(2) { --i: 2; }
+.scatter circle:nth-child(3) { --i: 3; }
+.scatter circle:nth-child(4) { --i: 4; }
+.scatter circle:nth-child(5) { --i: 5; }
+.scatter circle:nth-child(6) { --i: 6; }
+.scatter circle:nth-child(7) { --i: 7; }
+.scatter circle:nth-child(8) { --i: 8; }
+.scatter circle:nth-child(9) { --i: 9; }
+.scatter circle:nth-child(10) { --i: 10; }
+.scatter circle:nth-child(11) { --i: 11; }
+.scatter circle:nth-child(12) { --i: 12; }
+        
+        /* About Section */
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            width: 50%;
+            height: 3px;
+            background: var(--secondary);
+            position: absolute;
+            bottom: -10px;
+            left: 25%;
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 30px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            /* border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
+        }
+        
+        /* Tools Section */
+        .tools {
+            background-color: var(--light);
+        }
+        
+        .tool-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px 20px;
+            text-align: center;
+            width: calc(33.333% - 20px);
+            min-width: 250px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--secondary);
+        }
+        
+        .tool-card h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        
+        .tool-packages {
+            color: var(--gray);
+            font-style: italic;
+        }
+        
+        /* Services Section */
+        :root {
+    --primary: #4361ee;
+    --primary-light: #4895ef;
+    --secondary: #3f37c9;
+    --accent: #560bad;
+    --text-dark: #2b2d42;
+    --text-light: #8d99ae;
+    --background: #f8f9fa;
+    --card-bg: #ffffff;
+    --gradient-start: #4361ee;
+    --gradient-end: #7209b7;
+}
+
+.services-section {
+    padding: 5rem 0;
+    background-color: var(--background);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--primary-light), var(--accent));
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.services-section::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--accent), var(--primary-light));
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.title-underline {
+    height: 4px;
+    width: 70px;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 1;
+    border-top: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.03), rgba(86, 11, 173, 0.03));
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.1), rgba(86, 11, 173, 0.1));
+}
+
+.service-icon svg {
+    width: 60px;
+    height: 60px;
+    stroke: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon svg {
+    stroke: var(--accent);
+    transform: scale(1.1);
+}
+
+.service-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-content h3 {
+    font-size: 1.3rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-content h3 {
+    color: var(--primary);
+}
+
+.service-content ul {
+    margin: 0 0 1.5rem 1.2rem;
+    padding: 0;
+    list-style-type: none;
+    flex-grow: 1;
+}
+
+.service-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-light);
+    transition: all 0.3s ease;
+}
+
+.service-content ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+}
+
+.service-card:hover .service-content ul li {
+    color: var(--text-dark);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.2);
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--accent), var(--secondary));
+    z-index: -1;
+    transition: transform 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.btn:hover {
+    box-shadow: 0 6px 20px rgba(67, 97, 238, 0.3);
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    .service-icon {
+        height: 100px;
+    }
+    
+    .service-icon svg {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    .service-content {
+        padding: 1.2rem;
+    }
+    
+    .service-content h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+}
+        
+        /* Domains Section */
+        .domains {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a2a3a 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .domains .section-title h2 {
+            color: white;
+        }
+        
+        .domains-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .domain-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 25px;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .domain-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+        
+        /* Contact Section */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--secondary);
+        }
+        
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .btn-submit {
+            background: var(--primary);
+            width: 100%;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-submit:hover {
+            background: #1a2a3a;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: var(--light);
+            border-radius: 50%;
+            color: var(--primary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Data Visualization Animation */
+        .data-visual {
+            position: relative;
+            height: 150px;
+            margin: 40px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+        
+        .bar {
+            width: 40px;
+            background: var(--secondary);
+            border-radius: 5px 5px 0 0;
+            animation: barAnimation 2s infinite alternate;
+        }
+        
+        .bar:nth-child(1) {
+            height: 60%;
+            animation-delay: 0.2s;
+        }
+        
+        .bar:nth-child(2) {
+            height: 85%;
+            animation-delay: 0.4s;
+        }
+        
+        .bar:nth-child(3) {
+            height: 40%;
+            animation-delay: 0.6s;
+        }
+        
+        .bar:nth-child(4) {
+            height: 70%;
+            animation-delay: 0.8s;
+        }
+        
+        .bar:nth-child(5) {
+            height: 90%;
+            animation-delay: 1s;
+        }
+        
+        @keyframes barAnimation {
+            from {
+                height: 10%;
+                background: #3498db;
+            }
+            to {
+                height: var(--to-height, 90%);
+                background: #2ecc71;
+            }
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            padding: 60px 0;
+        }
+        
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            min-width: 200px;
+        }
+        
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--light);
+        }
+        
+        .stat-text {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--light);
+        }
+        
+        .testimonial-cards {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-snap-type: x mandatory;
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            min-width: 300px;
+            flex: 0 0 calc(33.333% - 20px);
+            scroll-snap-align: start;
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-content::before {
+            content: '"';
+            font-size: 60px;
+            color: rgba(52, 152, 219, 0.1);
+            position: absolute;
+            top: -20px;
+            left: -20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-info p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background: var(--primary);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                transform: translateY(-150%);
+                transition: transform 0.3s ease;
+                z-index: 999;
+            }
+            
+            .nav-links.active {
+                transform: translateY(0);
+            }
+            
+            .nav-links li {
+                margin: 10px 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .about-text, .about-image {
+                flex: 100%;
+                padding: 0;
+                margin-bottom: 30px;
+            }
+            
+            .tool-card {
+                width: calc(50% - 20px);
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .domain-item {
+                width: calc(50% - 15px);
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .tool-card {
+                width: 100%;
+            }
+            
+            .domain-item {
+                width: 100%;
+            }
+            
+            .btn {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+            }
+            
+            .testimonial-card {
+                flex: 0 0 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Analyti<span style='color: #1b2c41;'>Xperts</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#domains">Domains</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="hamburger">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="particles-container">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="badge">Leading Academic Support</div>
+                <h1>Expert Research & <span class="highlight">Data Analysis</span> Solutions</h1>
+                <p>Your trusted partner for PhD research, academic projects, and statistical analysis across all disciplines with proven methodologies.</p>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
+                                <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
+                            </svg>
+                        </div>
+                        <span>Experienced Mentors</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <span>Proven Results</span>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                        <span>Advanced Analytics</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn primary-btn">
+                        <span>Our Services</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn secondary-btn">
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="visual-element chart">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <g class="chart-bars">
+                                <rect x="30" y="120" width="20" height="50" rx="2"></rect>
+                                <rect x="60" y="100" width="20" height="70" rx="2"></rect>
+                                <rect x="90" y="80" width="20" height="90" rx="2"></rect>
+                                <rect x="120" y="60" width="20" height="110" rx="2"></rect>
+                                <rect x="150" y="40" width="20" height="130" rx="2"></rect>
+                            </g>
+                            <g class="chart-line">
+                                <path d="M40 120 L70 95 L100 75 L130 55 L160 35" fill="none"></path>
+                                <circle cx="40" cy="120" r="4"></circle>
+                                <circle cx="70" cy="95" r="4"></circle>
+                                <circle cx="100" cy="75" r="4"></circle>
+                                <circle cx="130" cy="55" r="4"></circle>
+                                <circle cx="160" cy="35" r="4"></circle>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="visual-element scatter">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="5"></circle>
+                            <circle cx="80" cy="60" r="5"></circle>
+                            <circle cx="100" cy="30" r="5"></circle>
+                            <circle cx="130" cy="70" r="5"></circle>
+                            <circle cx="160" cy="50" r="5"></circle>
+                            <circle cx="50" cy="90" r="5"></circle>
+                            <circle cx="70" cy="120" r="5"></circle>
+                            <circle cx="110" cy="100" r="5"></circle>
+                            <circle cx="140" cy="130" r="5"></circle>
+                            <circle cx="170" cy="110" r="5"></circle>
+                            <circle cx="60" cy="150" r="5"></circle>
+                            <circle cx="90" cy="160" r="5"></circle>
+                            <circle cx="120" cy="170" r="5"></circle>
+                            <circle cx="150" cy="150" r="5"></circle>
+                        </svg>
+                    </div>
+                    <div class="visual-element document">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M40,20 L160,20 C165,20 170,25 170,30 L170,170 C170,175 165,180 160,180 L40,180 C35,180 30,175 30,170 L30,30 C30,25 35,20 40,20 Z" fill="#f5f5f5"></path>
+                            <line x1="50" y1="50" x2="150" y2="50" stroke="#ddd" stroke-width="4"></line>
+                            <line x1="50" y1="70" x2="150" y2="70" stroke="#ddd" stroke-width="4"></line>
+                            <line x1="50" y1="90" x2="150" y2="90" stroke="#ddd" stroke-width="4"></line>
+                            <line x1="50" y1="110" x2="120" y2="110" stroke="#ddd" stroke-width="4"></line>
+                            <line x1="50" y1="140" x2="90" y2="140" stroke="#ddd" stroke-width="4"></line>
+                            <line x1="50" y1="160" x2="70" y2="160" stroke="#ddd" stroke-width="4"></line>
+                        </svg>
+                    </div>
+                    <div class="visual-element code">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="20" width="160" height="160" rx="5" fill="#f5f5f5"></rect>
+                            <text x="30" y="45" font-family="monospace" font-size="10" fill="#555">import pandas as pd</text>
+                            <text x="30" y="65" font-family="monospace" font-size="10" fill="#555">import numpy as np</text>
+                            <text x="30" y="85" font-family="monospace" font-size="10" fill="#555">import matplotlib.pyplot</text>
+                            <text x="30" y="105" font-family="monospace" font-size="10" fill="#555">from sklearn import model</text>
+                            <text x="30" y="125" font-family="monospace" font-size="10" fill="#555">df = pd.read_csv('data')</text>
+                            <text x="30" y="145" font-family="monospace" font-size="10" fill="#555">model.fit(X_train, y)</text>
+                            <text x="30" y="165" font-family="monospace" font-size="10" fill="#555">print(accuracy_score())</text>
+                        </svg>
+                    </div>
+                    <div class="glow"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <div class="chevrons">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who We Are</h3>
+                    <p>Founded by an experienced <strong>statistician</strong>, AnalytiXperts offers expert-level assistance to PhD and postgraduate students across disciplines. We combine data science, academic writing, and research methods to ensure your success.</p>
+                    <h3>Our Mission</h3>
+                    <p>To empower scholars by delivering reliable, ethical, and comprehensive research solutions that help you achieve academic excellence.</p>
+                    <div class="data-visual">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./assets/about.png" alt="Data Analysis Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-text">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-text">Research Papers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-text">Client Satisfaction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">12+</div>
+                    <div class="stat-text">Years Experience</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Services Section -->
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3>PhD Research Guidance</h3>
+                    <ul>
+                        <li>Topic selection</li>
+                        <li>Hypothesis formulation</li>
+                        <li>Literature review support</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Support</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3>Statistical Data Analysis</h3>
+                    <ul>
+                        <li>Quantitative and qualitative methods</li>
+                        <li>Predictive modeling</li>
+                        <li>Exploratory and Inferential statistics</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Support</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon>
+                        <line x1="12" y1="22" x2="12" y2="15.5"></line>
+                        <polyline points="22 8.5 12 15.5 2 8.5"></polyline>
+                        <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
+                        <line x1="12" y1="2" x2="12" y2="8.5"></line>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3>Project Development</h3>
+                    <ul>
+                        <li>UG, PG, and PhD-level academic projects</li>
+                        <li>Software-based implementation</li>
+                        <li>Technical documentation</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Support</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3>Research Paper Writing</h3>
+                    <ul>
+                        <li>Journal-ready content</li>
+                        <li>Formatting as per IEEE, APA, Scopus, UGC</li>
+                        <li>Plagiarism-free content</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Support</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="16 12 12 8 8 12"></polyline>
+                        <line x1="12" y1="16" x2="12" y2="8"></line>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3>Data Visualization</h3>
+                    <ul>
+                        <li>Charts, graphs, and interactive dashboards</li>
+                        <li>Statistical visualizations</li>
+                        <li>Research-ready figures</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Support</a>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path>
+                    </svg>
+                </div>
+                <div class="service-content">
+                    <h3>Tool Training</h3>
+                    <ul>
+                        <li>Personalized training in SPSS, R, Python</li>
+                        <li>SAS and Power BI coaching</li>
+                        <li>Data analysis workshops</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Tools Section -->
+    <section class="tools" id="tools">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Tools & Technologies</h2>
+            </div>
+            <div class="tool-cards">
+                <div class="tool-card">
+                    <div class="tool-icon">🐍</div>
+                    <h3>Python</h3>
+                    <p>Advanced data analysis and manipulation for research projects</p>
+                    <p class="tool-packages">Pandas, NumPy, Matplotlib, Seaborn</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">R</div>
+                    <h3>R Programming</h3>
+                    <p>Statistical computing and graphics for academic research</p>
+                    <p class="tool-packages">ggplot2, dplyr, stats</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📊</div>
+                    <h3>SPSS</h3>
+                    <p>Statistical analysis software for social sciences</p>
+                    <p class="tool-packages">Descriptive & Inferential analysis, Regression, ANOVA</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📈</div>
+                    <h3>SAS</h3>
+                    <p>Advanced analytics for complex research data</p>
+                    <p class="tool-packages">Clinical data, predictive modeling</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📉</div>
+                    <h3>Power BI</h3>
+                    <p>Business intelligence and data visualization tools</p>
+                    <p class="tool-packages">Interactive dashboards, data reporting</p>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🖼️</div>
+                    <h3>Matplotlib</h3>
+                    <p>Comprehensive library for creating static visualizations</p>
+                    <p class="tool-packages">High-quality data visualizations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <!-- Domains Section -->
+    <section class="domains" id="domains">
+        <div class="container">
+            <div class="section-title">
+                <h2>Domains Covered</h2>
+            </div>
+            <p>Our expertise spans across multiple academic disciplines and research areas</p>
+            <div class="domains-list">
+                <div class="domain-item">Social Sciences</div>
+                <div class="domain-item">Life Sciences</div>
+                <div class="domain-item">Engineering</div>
+                <div class="domain-item">Business & Management</div>
+                <div class="domain-item">Public Health</div>
+                <div class="domain-item">Economics</div>
+                <div class="domain-item">Education</div>
+                <div class="domain-item">Psychology</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+            </div>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>AnalytiXperts provided exceptional support for my PhD dissertation. Their statistical analysis expertise helped me uncover insights I would have missed otherwise.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <!-- <div class="author-image">
+                            <img src="/api/placeholder/50/50" alt="Client">
+                        </div> -->
+                        <div class="author-info">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p>Psychology Researcher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>The team's knowledge of Python and data visualization tools transformed my research data into compelling visuals that strengthened my arguments considerably.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <!-- <div class="author-image">
+                            <img src="/api/placeholder/50/50" alt="Client">
+                        </div> -->
+                        <div class="author-info">
+                            <h4>Prof. Michael Chen</h4>
+                            <p>Economics Department</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>I was struggling with SPSS analysis for my research when I found AnalytiXperts. Their guidance was clear, professional, and exactly what I needed to complete my project.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <!-- <div class="author-image">
+                            <img src="/api/placeholder/50/50" alt="Client">
+                        </div> -->
+                        <div class="author-info">
+                            <h4>Prof. Michael Chen</h4>
+                            <p>Economics Department</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <!-- Icon examples in use -->
+<div class="contact-icon">
+    <i class="fas fa-envelope"></i>
+</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>analytixperts24@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Phone/WhatsApp</h4>
+                            <p>+91-7666305009</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Pune, India</p>
+                        </div>
+                    </div>
+                    <!-- Social media icons -->
+<div class="social-links">
+    <a href="#" class="social-link" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="#" class="social-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="#" class="social-link" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a href="#" class="social-link" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+</div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="topic">Topic</label>
+                            <select id="topic" class="form-control">
+                                <option value="">Select a Topic</option>
+                                <option value="phd">PhD Research</option>
+                                <option value="stats">Statistical Analysis</option>
+                                <option value="project">Project Development</option>
+                                <option value="paper">Research Paper Writing</option>
+                                <option value="visualization">Data Visualization</option>
+                                <option value="training">Tool Training</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            
+            <div class="copyright">
+                &copy; 2025 AnalytiXperts. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                navLinks.classList.remove('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Form Submission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const topic = document.getElementById('topic').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to a server
+            // For demo purposes, we'll just log it and show an alert
+            console.log({ name, email, topic, message });
+            
+            alert('Thank you for your message! We will get back to you soon.');
+            form.reset();
+        });
+        
+        // Animation for stats numbers
+        function animateStats() {
+            const stats = document.querySelectorAll('.stat-number');
+            
+            stats.forEach(stat => {
+                const target = parseInt(stat.textContent);
+                const duration = 2000; // 2 seconds
+                const startTime = Date.now();
+                
+                function updateNumber() {
+                    const currentTime = Date.now();
+                    const elapsed = currentTime - startTime;
+                    
+                    if (elapsed < duration) {
+                        const progress = elapsed / duration;
+                        const current = Math.floor(target * progress);
+                        
+                        if (stat.textContent.endsWith('%')) {
+                            stat.textContent = current + '%';
+                        } else if (stat.textContent.endsWith('+')) {
+                            stat.textContent = current + '+';
+                        } else {
+                            stat.textContent = current;
+                        }
+                        
+                        requestAnimationFrame(updateNumber);
+                    } else {
+                        if (stat.textContent.endsWith('%')) {
+                            stat.textContent = target + '%';
+                        } else if (stat.textContent.includes('+')) {
+                            stat.textContent = target + '+';
+                        } else {
+                            stat.textContent = target;
+                        }
+                    }
+                }
+                
+                updateNumber();
+            });
+        }
+        
+        // Run stats animation when in view
+        const statsSection = document.querySelector('.stats');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+        
+        observer.observe(statsSection);
+    </script>
+
+</body>
+
+</html>
